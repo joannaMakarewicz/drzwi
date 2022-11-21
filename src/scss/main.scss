@@ -1,13 +1,66 @@
 @import "~normalize.css";
 
 @import "_variables";
-@import "modules/hello.scss";
 
-body {
-  background: $wtf;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
+a {
+  color: black;
+  text-decoration: none;
+}
+
+html {
+  color: black;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.article {
+
+  &--1 {
+    background-image: url("../assets/img/podłoga.jpg");
+    background-size: cover;  
+    height: 60vh;
+  }
+  &__header {
+    margin: 0;
+  }
+  &__invitation {
+    background-color: white;
+    width: 20vw;
+    height: 40vh;
+  }
+}
+
+.form {
+  bottom:5%;
+  position: absolute;
+  right: 5%;
+}
+.header {
+  border-bottom: 1px solid grey;
+  height: 150px;
+  &__logo {
+    height: 100%;
+  }
+}
+
+.main {
+  position: relative;
+}
+.nav {
+  border-bottom: 1px solid grey;
+  padding: 6px;
+  &__container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  &__hamburger {
+    display: none;
+  }
+  &__link {
+    text-decoration: none;
+  }
 }

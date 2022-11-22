@@ -4,11 +4,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&family=Mrs+Saint+Delafield&display=swap");
 
 a {
-  color: black;
+  color: white;
   font-weight: 700;
   text-decoration: none;
 }
 
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+}
 html {
   color: black;
   box-sizing: border-box;
@@ -28,7 +32,10 @@ html {
     background-image: url("../assets/img/podłoga.jpg");
     background-position: 0 30%;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
     height: 75vh;
+    z-index: 1;
   }
   &__content {
     color: black;
@@ -40,20 +47,54 @@ html {
     padding: 6px;
     max-width: 50%;
   }
+  &__dot {
+    background:red;
+    border-radius: 50%;
+    width:6px;
+    height: 6px;
+    position:absolute;
+    &--1 {
+      left:34vw;
+    }
+    &--2 {
+      left:35vw;
+    }
+    &--3 {
+      left:36vw;
+    }
+    
+  }
   &__effect {
+    align-items: center;
     background: $additionalColor;
+    display:flex;
     height: 9vh;
+    opacity:0.8;
+    position:relative;
   }
   &__header {
     color: $mainColor;
+    display: flex;
     font-size: 70px;
+    left: 10%;
     letter-spacing: 2px;
     font-weight: 700;
+    justify-content: center;
     margin: 0;
     position: absolute;
-    left: 20%;
+    text-align: center;
     top: 35%;
-    width: 30vw;
+    width: 50vw;
+    &::before {
+      content: url(../assets/icons/left-arrow.svg);
+      width: 200px;
+      margin:50px;
+    }
+    &::after {
+      content: url(../assets/icons/right-arrow.svg);
+      margin:50px;
+      width: 200px;
+    }
   }
   &__invitation {
     background-image: url("../assets/icons/tymon.jpg");
@@ -87,15 +128,18 @@ html {
 .front {
   min-height: 80vh;
   position: relative;
+  margin-bottom: 18vh;
+  top:15vh;
 }
 
 .header {
-  // border-bottom: 1px solid grey;
   display: grid;
+  position:fixed;
   grid-template-columns: 250px 1fr;
   grid-template-rows: 1fr 50px;
+  width: 100vw;
+  z-index: 5;
   &__logo {
-    // border-right:1px solid grey;
     width: 250px;
     height: 150px;
     grid-area: 1/1/3/2;
@@ -117,8 +161,9 @@ html {
   position: relative;
 }
 .nav {
+  background:black;
   align-items: center;
-  border-top: 1px solid grey;
+  border-top: 1px solid $mainColor;
   display: flex;
   justify-content: space-evenly;
   width: 100%;

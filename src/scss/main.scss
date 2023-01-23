@@ -1,11 +1,11 @@
 @import "~normalize.css";
 
 @import "_variables";
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&family=Mrs+Saint+Delafield&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&display=swap');
 
 a {
   color: white;
-  font-weight: 700;
+  font-weight: 400;
   text-decoration: none;
 }
 
@@ -27,13 +27,13 @@ html {
 }
 
 .article {
+  min-width: 100%;
+  padding: 6px;
   z-index: 1;
   &--1 {
     background-image: url("../assets/img/podłoga.jpg");
     background-position: 0 30%;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
     height: 75vh;
     z-index: 1;
   }
@@ -50,64 +50,31 @@ html {
   &__dot {
     background:red;
     border-radius: 50%;
-    width:6px;
-    height: 6px;
-    position:absolute;
-    &--1 {
-      left:34vw;
-    }
-    &--2 {
-      left:35vw;
-    }
-    &--3 {
-      left:36vw;
-    }
-    
-  }
-  &__effect {
-    align-items: center;
-    background: $additionalColor;
-    display:flex;
-    height: 9vh;
-    opacity:0.8;
-    position:relative;
+    margin:12px;
+    width:10px;
+    height: 10px;
   }
   &__header {
+    align-items: center;
     color: $mainColor;
     display: flex;
-    font-size: 70px;
-    left: 10%;
+    font-size: 50px;
+    height: 100%;
     letter-spacing: 2px;
     font-weight: 700;
     justify-content: center;
     margin: 0;
-    position: absolute;
+    position:relative;
     text-align: center;
-    top: 35%;
-    width: 50vw;
+    top:7vh;
     &::before {
       content: url(../assets/icons/left-arrow.svg);
-      width: 200px;
-      margin:50px;
+      width: 100px;
     }
     &::after {
       content: url(../assets/icons/right-arrow.svg);
-      margin:50px;
-      width: 200px;
+      width: 100px;
     }
-  }
-  &__invitation {
-    background-image: url("../assets/icons/tymon.jpg");
-    background-position: left top;
-    border: 2px solid $mainColor;
-    color: white;
-    width: 30vw;
-    height: 64vh;
-    padding: 16px;
-    position: absolute;
-    right: 0%;
-    top: 20%;
-    z-index: 2;
   }
   &__sign {
     margin: 6px;
@@ -126,23 +93,21 @@ html {
 }
 
 .front {
-  min-height: 80vh;
   position: relative;
-  margin-bottom: 18vh;
   top:15vh;
 }
 
 .header {
   display: grid;
   position:fixed;
-  grid-template-columns: 250px 1fr;
-  grid-template-rows: 1fr 50px;
+  grid-template-columns: 100px 1fr;
+  background: rgba(0,0,0,0.5);
   width: 100vw;
   z-index: 5;
   &__logo {
-    width: 250px;
-    height: 150px;
-    grid-area: 1/1/3/2;
+    border-radius:50%;
+    margin: 6px;
+    width: 100px;
   }
   &__name {
     font-size: 30px;
@@ -161,9 +126,7 @@ html {
   position: relative;
 }
 .nav {
-  background:black;
   align-items: center;
-  border-top: 1px solid $mainColor;
   display: flex;
   justify-content: space-evenly;
   width: 100%;

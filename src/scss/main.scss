@@ -84,12 +84,24 @@ html {
 }
 
 .form {
+background-color: #CAC3B8;
+display: grid;
+grid-template-columns: 70% 1fr;
+padding: 16px;
+&__button {
   background-color: red;
-  bottom: 5%;
-  color: $mainColor;
-  position: fixed;
-  right: 5%;
-  z-index: 3;
+  padding: 6px;
+}
+&__container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+&__heading {
+  font-size: 14px;
+  font-weight: 400;
+  margin:0 16px 0 0;
+}
 }
 
 .front {
@@ -105,10 +117,10 @@ html {
   width: 100vw;
   z-index: 5;
   &__logo {
-    border-left: 1px solid $mainColor;
-    border-top: 1px solid $mainColor;
-    margin: 6px;
-    width: 100px;
+  border-top-right-radius:50%;
+  border-bottom-right-radius:50% ;
+  margin: 6px;
+  width: 100px;
   }
   &__name {
     font-size: 30px;
@@ -123,9 +135,6 @@ html {
   }
 }
 
-.main {
-  position: relative;
-}
 .nav {
   align-items: center;
   display: flex;

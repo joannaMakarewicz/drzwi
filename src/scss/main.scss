@@ -31,6 +31,25 @@ html {
   background: #f8f8f8;
   padding: 16px;
   text-align: center;
+  &__container {
+    background-color: #FFF;
+    margin: 0 auto;
+    padding: 16px;
+    width: 70vw;
+  }
+  &__content {
+    margin:0;
+    text-align: center;
+  }
+  &__heading {
+    background-color: $mainColor;
+    border: none;
+    color: #FFF;
+    padding: 16px;
+    position: relative;
+    top:-70px;
+    width: 50%;
+  }
   &__photo {
     width: 60vw;
   }

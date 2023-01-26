@@ -21,7 +21,9 @@ a {
   margin-bottom: 1.66rem;
   padding-top: 1.66rem;
   text-align: center;
+  z-index: 2;
   &__heading {
+    background-image: linear-gradient(to right,rgb(237 114 13), rgb(241,158,89));
     background-color: $mainColor;
     border: none;
     color: #fff;
@@ -30,10 +32,12 @@ a {
     position: relative;
     top: -35px;
     width: 60%;
+    z-index: 4;;
   }
   &__photo {
     box-shadow: 26px 26px 0 rgb(0 0 0 / 7%);
     width: 70vw;
+    z-index: 3;
   }
 }
 
@@ -77,6 +81,8 @@ body {
   width: 100vw;
   z-index: 5;
   &__hamburger {
+    background: none;
+    border: 0;
     position: absolute;
     right: 15px;
     top: 15px;
@@ -173,7 +179,17 @@ html {
 .offer {
   min-width: 100%;
   z-index: 1;
+  &__effect {
+    height: 100%;
+    width: 40vw;
+    background: rgba(236, 199, 168, 0.5);
+    position: absolute;
+    right: 0;
+    z-index: -1;
+  }
   &__heading {
+    margin-top:0;
+    padding-top: 0.83rem;
     text-align: center;
   }
   &__special {

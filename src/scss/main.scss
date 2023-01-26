@@ -40,6 +40,11 @@ a {
     width: 60%;
     z-index: 4;
     &--2 {
+      background-image: linear-gradient(
+        to right,
+        rgb(235, 184, 142),
+        rgb(237 114 13)
+      );
       left: 40%;
     }
   }
@@ -52,6 +57,7 @@ a {
 
 body {
   height: 100vh;
+  transition: all 0.8s ease-in-out;
   width: 100vw;
 }
 

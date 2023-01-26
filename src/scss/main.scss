@@ -23,7 +23,11 @@ a {
   text-align: center;
   z-index: 2;
   &__heading {
-    background-image: linear-gradient(to right,rgb(237 114 13), rgb(241,158,89));
+    background-image: linear-gradient(
+      to right,
+      rgb(237 114 13),
+      rgb(241, 158, 89)
+    );
     background-color: $mainColor;
     border: none;
     color: #fff;
@@ -32,7 +36,7 @@ a {
     position: relative;
     top: -35px;
     width: 60%;
-    z-index: 4;;
+    z-index: 4;
   }
   &__photo {
     box-shadow: 26px 26px 0 rgb(0 0 0 / 7%);
@@ -52,24 +56,41 @@ body {
 }
 
 .form {
-  background-color: #cac3b8;
+  background-color: #323232;
+  color: #FFF;
   display: grid;
   grid-template-columns: 70% 1fr;
-  margin: 16px 0;
-  padding: 16px;
+  line-height: 1.5;
+  margin: 36px 0;
+  padding: 46px 16px;
   &__button {
-    background-color: red;
-    padding: 6px;
+    background-image: linear-gradient(
+      to right,
+      rgb(237 114 13),
+      rgb(241, 158, 89)
+    );
+    background-color: $mainColor;
+    border:0;
+    border-radius: 3px;
+    color: #FFF;
+    padding: 16px;
   }
   &__container {
     align-items: center;
     display: flex;
     justify-content: center;
   }
-  &__heading {
+  &__content {
     font-size: 14px;
-    font-weight: 400;
-    margin: 0 16px 0 0;
+    padding:6px;
+    text-align: center;
+  }
+  &__heading {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    padding: 6px;
+    text-align: center;
   }
 }
 
@@ -188,7 +209,7 @@ html {
     z-index: -1;
   }
   &__heading {
-    margin-top:0;
+    margin-top: 0;
     padding-top: 0.83rem;
     text-align: center;
   }

@@ -104,11 +104,11 @@ body {
   background-color: #323232;
   color: #fff;
   display: grid;
-  grid-column-gap: 26px;
-  grid-template-columns: 70% 1fr;
+  grid-column-gap: 16px;
+  grid-template-columns: 60% 1fr;
   line-height: 1.5;
   margin: 36px 0;
-  padding: 26px;
+  padding: 16px;
   &__button {
     background-image: linear-gradient(
       to right,
@@ -120,7 +120,7 @@ body {
     border: 0;
     border-radius: 3px;
     color: #fff;
-    padding: 16px;
+    padding: 6px;
   }
   &__container {
     align-items: center;

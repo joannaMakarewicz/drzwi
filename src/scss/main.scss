@@ -61,6 +61,40 @@ body {
   width: 100vw;
 }
 
+.brands {
+  margin: 36px 0;
+  &__content {
+    margin:0;
+    padding: 0 26px 26px;
+    text-align: left;
+  }
+  &__image {
+    margin: 16px;
+    width: 100px;
+  }
+  &__heading {
+    text-align: center;
+  }
+  &__list {
+    text-align: center;
+    padding: 26px;
+  }
+}
+
+.contact {
+  margin: 36px 0;
+  &__heading {
+    text-align: center;
+  }
+}
+
+.docs {
+  margin: 36px 0;
+  &__heading {
+    text-align: center;
+  }
+}
+
 .front {
   position: relative;
   top: 15vh;
@@ -68,12 +102,13 @@ body {
 
 .form {
   background-color: #323232;
-  color: #FFF;
+  color: #fff;
   display: grid;
-  grid-template-columns: 60% 1fr;
+  grid-column-gap: 26px;
+  grid-template-columns: 70% 1fr;
   line-height: 1.5;
   margin: 36px 0;
-  padding: 46px 16px;
+  padding: 26px;
   &__button {
     background-image: linear-gradient(
       to right,
@@ -82,19 +117,19 @@ body {
     );
     background-color: $mainColor;
     background-color: $mainColor;
-    border:0;
+    border: 0;
     border-radius: 3px;
-    color: #FFF;
+    color: #fff;
     padding: 16px;
   }
   &__container {
     align-items: center;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
   }
   &__content {
     font-size: 14px;
-    padding:6px;
+    padding: 6px;
     text-align: center;
   }
   &__heading {
@@ -210,6 +245,7 @@ html {
 }
 
 .offer {
+  margin: 36px 0;
   min-width: 100%;
   z-index: 1;
   &__effect {
@@ -221,43 +257,28 @@ html {
     z-index: -1;
   }
   &__heading {
-    margin-top: 0;
-    padding-top: 0.83rem;
     text-align: center;
-  }
-  &__special {
-    background-image: linear-gradient(
-      to right,
-      rgb(237 114 13),
-      rgb(235, 184, 142)
-    );
-    background-color: $mainColor;
-    height: 6px;
-    margin: 0 auto 1.66rem;
-    width: 100px;
   }
 }
 
-.section {
-  min-width: 100%;
-  padding: 6px;
-  z-index: 1;
-  &__content {
-    color: black;
-    background-color: white;
-    font-size: 16px;
-    line-height: 1.5;
-    min-height: 60%;
-    opacity: 0.6;
-    padding: 6px;
-    max-width: 50%;
+.opinion {
+  margin: 36px 0;
+  &__heading {
+    text-align: center;
   }
+}
 
-  &__sign {
-    margin: 6px;
-    font-family: "Mrs Saint Delafield", cursive;
-    font-size: 26px;
-  }
+
+.special {
+  background-image: linear-gradient(
+    to right,
+    rgb(237 114 13),
+    rgb(235, 184, 142)
+  );
+  background-color: $mainColor;
+  height: 6px;
+  margin: 0 auto 1.66rem;
+  width: 100px;
 }
 
 .special-color {

@@ -18,7 +18,7 @@ a {
 
 .article {
   background: #f8f8f8;
-  margin-bottom: 1.66rem;
+  margin-bottom: 0.83rem;
   padding-top: 1.66rem;
   text-align: center;
   z-index: 2;
@@ -64,6 +64,7 @@ body {
 .brands {
   margin: 36px 0;
   &__content {
+    line-height: 1.5;
     margin:0;
     padding: 0 26px 26px;
     text-align: left;
@@ -188,7 +189,7 @@ html {
 
 .main {
   &__header {
-    background-image: url("../assets/img/podłoga.jpg");
+    background-image: url("../assets/img/podłoga1.jpg");
     background-size: cover;
     height: 75vh;
     min-width: 100%;

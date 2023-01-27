@@ -50,7 +50,7 @@ a {
   }
   &__photo {
     box-shadow: 26px 26px 0 rgb(0 0 0 / 7%);
-    width: 70vw;
+    width: 80vw;
     z-index: 3;
   }
 }
@@ -62,10 +62,11 @@ body {
 }
 
 .brands {
-  margin: 36px 0;
+  margin: 36px auto;
+  width: 80vw;
   &__content {
     line-height: 1.5;
-    margin:0;
+    margin: 0;
     padding: 0 26px 26px;
     text-align: left;
   }
@@ -83,9 +84,34 @@ body {
 }
 
 .contact {
-  margin: 36px 0;
-  &__heading {
+  background-image: url(../assets/img/kontakt.jpg);
+  background-size: cover;
+  color: #fff;
+  font-size: 14px;
+  height: 100vh;
+  margin: 36px auto;
+  &__container {
+    margin: 0 auto;
+    width: 80vw;
+  }
+  &__ending {
+    border-top: 1px solid #fff;
+    font-size: 14px;
+    line-height: 1;
     text-align: center;
+  }
+  &__header {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  &__heading {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  &__item {
+    font-weight: 200;
+    list-style: none;
+    margin-bottom: 1.66rem;
   }
 }
 
@@ -96,20 +122,9 @@ body {
   }
 }
 
-.front {
-  position: relative;
-  top: 15vh;
-}
-
 .form {
-  background-color: #323232;
-  color: #fff;
-  display: grid;
-  grid-column-gap: 16px;
-  grid-template-columns: 60% 1fr;
-  line-height: 1.5;
-  margin: 36px 0;
-  padding: 16px;
+  margin: 0 auto;
+
   &__button {
     background-image: linear-gradient(
       to right,
@@ -117,29 +132,35 @@ body {
       rgb(235, 184, 142)
     );
     background-color: $mainColor;
-    background-color: $mainColor;
     border: 0;
     border-radius: 3px;
     color: #fff;
-    padding: 6px;
-  }
-  &__container {
-    align-items: center;
-    display: flex;
-    justify-content: flex-end;
-  }
-  &__content {
-    font-size: 14px;
-    padding: 6px;
-    text-align: center;
+    font-size: 18px;
+    padding: 16px;
   }
   &__heading {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 16px;
-    padding: 6px;
-    text-align: center;
+    font-size: 18px;
   }
+  &__input {
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    padding: 6px;
+    width: 80vw;
+  }
+  &__textarea {
+    border: none;
+    border-radius: 3px;
+    min-height: 150px;
+    outline: none;
+    padding: 6px;
+    width: 80vw;
+  }
+}
+
+.front {
+  position: relative;
+  top: 15vh;
 }
 
 .header {
@@ -269,6 +290,51 @@ html {
   }
 }
 
+.shortForm {
+  background-color: #323232;
+  color: #fff;
+  line-height: 1.5;
+  margin: 36px 0;
+  padding: 16px;
+  &__button {
+    background-image: linear-gradient(
+      to right,
+      rgb(237 114 13),
+      rgb(235, 184, 142)
+    );
+    background-color: $mainColor;
+    border: 0;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 16px;
+  }
+  &__container {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__content {
+    font-size: 14px;
+    padding: 6px;
+    text-align: center;
+  }
+  &__heading {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    padding: 6px;
+    text-align: center;
+  }
+  &__width {
+    display: grid;
+    grid-column-gap: 16px;
+    grid-template-columns: 60% 1fr;
+    margin:0 auto;
+    width: 80vw;
+  }
+}
 
 .special {
   background-image: linear-gradient(

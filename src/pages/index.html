@@ -81,36 +81,48 @@
           <h3 class="article__heading article__heading--2">Obsługa remontu</h3>
         </article>
       </section>
-      <section class="form">
-        <div>
-          <h2 class="form__heading">
-            Uzyskaj bezpłatną konsultację Twojej inwestycji
-          </h2>
-          <p class="form__content">
-            Chętnie odpowiemy na wszelkie pytania, doradzimy i zapewnimy fachową
-            pomoc. Zadzwoń, napisz lub odwiedź nasz sklep.
-          </p>
-        </div>
+      <section class="shortForm">
+        <article class="shortForm__width">
+          <div>
+            <h2 class="shortForm__heading">
+              Uzyskaj bezpłatną konsultację Twojej inwestycji
+            </h2>
+            <p class="shortForm__content">
+              Chętnie odpowiemy na wszelkie pytania, doradzimy i zapewnimy
+              fachową pomoc. Zadzwoń, napisz lub odwiedź nasz sklep.
+            </p>
+          </div>
 
-        <div class="form__container">
-          <button class="form__button" href="" alt="Link to the contact form"
-            >Umów się</button
-          >
-        </div>
+          <div class="shortForm__container">
+            <button
+              class="shortForm__button"
+              href=""
+              alt="Link to the contact form"
+            >
+              Umów się
+            </button>
+          </div>
+        </article>
       </section>
 
       <section class="brands">
         <h2 class="brands__heading">Top marki</h2>
         <div class="special"></div>
-        <p class="brands__content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+        <p class="brands__content">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book.
+        </p>
         <div class="brands__list">
-          <a href="https://dre.pl/" target="_blank"><img class="brands__image" src="../assets/icons/dre2.png"></a>
-          <img class="brands__image" src="../assets/icons/intenso.png">
-          <img class="brands__image" src="../assets/icons/krono.png">
-          <img class="brands__image" src="../assets/icons/porta2.png">
-          <img class="brands__image" src="../assets/icons/schnell.png">
+          <a href="https://dre.pl/" target="_blank"
+            ><img class="brands__image" src="../assets/icons/dre2.png"
+          /></a>
+          <img class="brands__image" src="../assets/icons/intenso.png" />
+          <img class="brands__image" src="../assets/icons/krono.png" />
+          <img class="brands__image" src="../assets/icons/porta2.png" />
+          <img class="brands__image" src="../assets/icons/schnell.png" />
         </div>
-
       </section>
       <section class="opinion">
         <h2 class="opinion__heading">Opinie</h2>
@@ -120,11 +132,72 @@
         <h2 class="docs__heading">Katalogi</h2>
         <div class="special"></div>
       </section>
-      <section class="contact">
-        <h2 class="contact__heading">Kontakt</h2>
-        <div class="special"></div>
-      </section>
+      <section></section>
     </main>
-    <footer></footer>
+    <section class="contact">
+      <h2 class="contact__heading">Kontakt</h2>
+      <div class="special"></div>
+      <article class="contact__container">
+        <h3 class="contact__header">Dane kontaktowe</h3>
+        <ul class="contact__list">
+          <li class="contact__item">Al. Grunwaldzka 355, 80-309 GDAŃSK</li>
+          <li class="contact__item">58 345 25 93</li>
+          <li class="contact__item">biuro@a-jeden.pl</li>
+          <li class="contact__item">Pn-Pt: 9.00-17.00 <br />Sb: 10.00-14.00</li>
+        </ul>
+  
+        <form class="form">
+          <h4 class="form__heading">Forumlarz kontaktowy</h4>
+          <p>
+            <label
+              ><input
+                class="form__input"
+                name="name"
+                type="text"
+                placeholder="Imię"
+            /></label>
+          </p>
+          <p>
+            <label
+              ><input
+                class="form__input"
+                name="surname"
+                type="text"
+                placeholder="nazwisko"
+            /></label>
+          </p>
+          <p>
+            <label
+              ><input
+                class="form__input"
+                name="phone"
+                type="tel"
+                placeholder="Numer telefonu"
+            /></label>
+          </p>
+          <p>
+            <label
+              ><input
+                class="form__input"
+                name="mail"
+                type="email"
+                placeholder="Adres e-mail"
+            /></label>
+          </p>
+          <p>
+            <textarea
+              class="form__textarea"
+              placeholder="Twoja wiadomość"
+            ></textarea>
+          </p>
+          <p><input class="form__button" type="submit" value="Wyślij" /></p>
+        </form>
+      </article>
+
+      <footer class="contact__ending">
+        <p>© A-jeden. Wszystkie prawa zastrzeżone.</p>
+        <p>Realizacja: MakaDev</p>
+      </footer>
+    </section>
   </body>
 </html>

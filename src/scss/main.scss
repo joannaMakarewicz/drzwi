@@ -87,9 +87,10 @@ body {
   background-image: url(../assets/img/kontakt.jpg);
   background-size: cover;
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
   height: 100vh;
   margin: 36px auto;
+  padding-top: 36px;
   &__container {
     margin: 0 auto;
     width: 80vw;
@@ -295,7 +296,7 @@ html {
   color: #fff;
   line-height: 1.5;
   margin: 36px 0;
-  padding: 16px;
+  padding: 36px;
   &__button {
     background-image: linear-gradient(
       to right,
@@ -318,7 +319,7 @@ html {
   &__content {
     font-size: 14px;
     padding: 6px;
-    text-align: center;
+    text-align: left;
   }
   &__heading {
     font-size: 20px;
